@@ -1,0 +1,9 @@
+{"version": 2, "width": 80, "height": 24, "timestamp": 1731255000, "env": {"SHELL": "/bin/zsh", "TERM": "xterm-256color"}}
+[0.144218, "o", "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                               \r \r"]
+[0.144565, "o", "\u001b]7;file://mac.home/Users/olgaakukina/python-project-49\u0007"]
+[0.144827, "o", "\u001b]2;olgaakukina@mac\u0007\u001b]1;..on-project-49\u0007"]
+[0.14626, "o", "\u001b]7;file://mac.home/Users/olgaakukina/python-project-49\u001b\\"]
+[0.146768, "o", "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[01;32m➜  \u001b[36mpython-project-49\u001b[00m \u001b[K"]
+[0.146821, "o", "\u001b[?1h\u001b="]
+[0.146831, "o", "\u001b[?2004h"]
+[0.190774, "o", "\r\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[01;32m➜  \u001b[36mpython-project-49\u001b[00m \u001b[01;34mgit:(\u001b[31mmain\u001b[34m) \u001b[33m✗\u001b[00m \u001b[K"]

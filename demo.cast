@@ -1,0 +1,8 @@
+{"version": 2, "width": 80, "height": 24, "timestamp": 1730848486, "env": {"SHELL": "/bin/zsh", "TERM": "xterm-256color"}}
+[0.097403, "o", "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                               \r \r"]
+[0.097826, "o", "\u001b]7;file://olyapkas-air.home/Users/olgaakukina/python-project-49\u0007"]
+[0.098193, "o", "\u001b]2;olgaakukina@olyapkas-air\u0007\u001b]1;..on-project-49\u0007"]
+[0.099601, "o", "\u001b]7;file://olyapkas-air.home/Users/olgaakukina/python-project-49\u001b\\"]
+[0.100084, "o", "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[01;32m➜  \u001b[36mpython-project-49\u001b[00m \u001b[K"]
+[0.100167, "o", "\u001b[?1h\u001b=\u001b[?2004h"]
+[0.125615, "o", "\r\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[01;32m➜  \u001b[36mpython-project-49\u001b[00m \u001b[01;34mgit:(\u001b[31mmain\u001b[34m) \u001b[33m✗\u001b[00m \u001b[K"]
