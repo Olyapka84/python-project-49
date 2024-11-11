@@ -1,6 +1,6 @@
 from random import randint, choice
 import prompt
-from brain_games.scripts.welcome_user import welcome_user
+from brain_games.scripts.brain_games import main
 
 
 def progression_game():
