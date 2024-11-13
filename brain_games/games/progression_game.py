@@ -1,6 +1,6 @@
 from random import randint, choice
 import prompt
-from brain_games.scripts.brain_games import main
+from brain_games.cli import welcome_user
 
 
 def progression_game():
@@ -29,4 +29,3 @@ def progression_game():
             break
     else:
         print(f"Congratulations, {name}!")
-
