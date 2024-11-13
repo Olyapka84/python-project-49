@@ -1,6 +1,6 @@
 from random import randint, choice
 import prompt
-from brain_games.scripts.welcome_user import welcome_user
+from brain_games.cli import welcome_user
 
 
 def calc_game():

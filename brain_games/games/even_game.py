@@ -1,6 +1,6 @@
 from random import randint
 import prompt
-from brain_games.scripts.welcome_user import welcome_user
+from brain_games.cli import welcome_user
 
 
 def even_game():
