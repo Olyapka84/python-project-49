@@ -22,3 +22,5 @@ def prime_game():
         else:
             print(f"{answer} is wrong answer ;(. Correct answer was {correct_answer}.\nLet's try again, {name}!")
             break
+    else:
+        print(f"Congratulations, {name}!")
