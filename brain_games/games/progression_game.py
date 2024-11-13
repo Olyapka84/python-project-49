@@ -14,7 +14,7 @@ def progression_game():
         hidden_number = choice(sequence)
         hidden_number_index = sequence.index(hidden_number)
         sequence[hidden_number_index] = ".."
-        print(f"Question: {', '.join(str(item) for item in sequence)}")
+        print(f"Question: {' '.join(str(item) for item in sequence)}")
         answer = prompt.string('Your answer: ')
         correct_answer = hidden_number
         try:
