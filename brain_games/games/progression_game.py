@@ -17,19 +17,16 @@ def progression_game():
         print(f"Question: {' '.join(str(item) for item in sequence)}")
         answer = prompt.string('Your answer: ')
         correct_answer = hidden_number
-        try:
-            if int(answer) == correct_answer:
-                print("Correct!")
-                game_counter += 1
-            else:
-                print(f"{answer} is wrong answer ;(. "
-                      f"Correct answer was {correct_answer}.\n"
-                      f"Let's try again, {name}!")
-                break
-        except ValueError:
-            print(f"{answer} is wrong answer ;(. "
-                  f"Correct answer was {correct_answer}.\n"
-                  f"Let's try again, {name}!")
+
+        if answer.isdigit() and int(answer) == correct_answer:
+            print("Correct!")
+            game_counter += 1
+
+        else:
+            print(
+                f"{answer} is wrong answer ;(. "
+                f"Correct answer was {correct_answer}.\n"
+                f"Let's try again, {name}!")
             break
     else:
         print(f"Congratulations, {name}!")
