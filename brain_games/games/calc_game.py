@@ -22,16 +22,16 @@ def calc_game():
         elif operation == '*':
             correct_answer = number1 * number2
 
-            if answer.isdigit() and int(answer) == correct_answer:
-                print("Correct!")
-                game_counter += 1
+        if answer == correct_answer:
+            print("Correct!")
+            game_counter += 1
 
-            else:
-                print(
-                    f"{answer} is wrong answer ;(. "
-                    f"Correct answer was {correct_answer}.\n"
-                    f"Let's try again, {name}!")
-                break
+        else:
+            print(
+                f"{answer} is wrong answer ;(. "
+                f"Correct answer was {correct_answer}.\n"
+                f"Let's try again, {name}!")
+            break
 
     else:
         print(f"Congratulations, {name}!")
