@@ -18,7 +18,8 @@ def gcd_game():
             print("Correct!")
             game_counter += 1
         else:
-            print(f"{answer} is wrong answer ;(. Correct answer was {correct_answer}.\nLet's try again, {name}!")
+            print(f"{answer} is wrong answer ;(. Correct answer was {correct_answer}.\n"
+                  f"Let's try again, {name}!")
             break
 
     else:
