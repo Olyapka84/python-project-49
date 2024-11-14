@@ -29,11 +29,13 @@ def calc_game():
 
             else:
                 print(
-                    f"{answer} is wrong answer ;(. Correct answer was {correct_answer}.\n"
+                    f"{answer} is wrong answer ;(. "
+                    f"Correct answer was {correct_answer}.\n"
                     f"Let's try again, {name}!")
                 break
         except ValueError:
-            print(f"{answer} is wrong answer ;(. Correct answer was {correct_answer}.\n"
+            print(f"{answer} is wrong answer ;(. "
+                  f"Correct answer was {correct_answer}.\n"
                   f"Let's try again, {name}!")
             break
 
