@@ -22,7 +22,7 @@ def calc_game():
         elif operation == '*':
             correct_answer = number1 * number2
 
-        if answer == correct_answer:
+        if int(answer) == correct_answer:
             print("Correct!")
             game_counter += 1
 
