@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "A collection of simple and fun math games designed to improve logical thinking and basic arithmetic skills."
 authors = ["Olga Akukin <olyapa@gmail.com>"]
 readme = "README.md"
 packages = [
