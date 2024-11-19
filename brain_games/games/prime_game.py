@@ -1,7 +1,15 @@
 from random import randint
 import prompt
 from brain_games.cli import welcome_user
-from brain_games.prime import is_prime
+
+
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
 
 
 def prime_game():
