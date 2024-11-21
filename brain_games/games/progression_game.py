@@ -1,4 +1,4 @@
-from brain_games.random_for_games import get_random_number, choice
+from brain_games.random_for_games import get_random_number
 from brain_games.rules import BRAIN_PROGRESSION_RULES, PROGRESSION_LENGTH
 from brain_games.game_engine import run_game
 

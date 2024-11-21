@@ -12,7 +12,6 @@ def calculate(number1, operation, number2):
         return number1 * number2
 
 
-
 def generate_round():
     number1 = get_random_number(0, 50)
     number2 = get_random_number(0, 50)

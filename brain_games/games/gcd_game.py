@@ -11,6 +11,7 @@ def generate_round():
     correct_answer = gcd(number1, number2)
     return question, str(correct_answer)
 
+
 def gcd_game():
     rules = BRAIN_GCD_RULES
     run_game(rules, generate_round)
