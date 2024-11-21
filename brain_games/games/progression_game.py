@@ -1,16 +1,16 @@
-from brain_games.random_for_games import randint_with_range, choice
+from brain_games.random_for_games import get_random_number, choice
 from brain_games.rules import BRAIN_PROGRESSION_RULES, PROGRESSION_LENGTH
 from brain_games.game_engine import run_game
 
 
 def make_sequence():
-    start_sequence = randint_with_range(1, 100)
-    step_sequence = randint_with_range(1, 5)
-    hidden_num_index = randint_with_range(0, PROGRESSION_LENGTH - 1)
-    sequence = [start_sequence + i * step_sequence for i in range(PROGRESSION_LENGTH)]
-    correct_answer = str(sequence[hidden_num_index])
-    sequence[hidden_num_index] = ".."
-    question = f"Question: {' '.join(str(item) for item in sequence)}"
+    first_number = get_random_number(1, 100)
+    step = get_random_number(1, 5)
+    missed_num_index = get_random_number(0, PROGRESSION_LENGTH - 1)
+    sequence = [first_number + i * step for i in range(PROGRESSION_LENGTH)]
+    correct_answer = str(sequence[missed_num_index])
+    sequence[missed_num_index] = ".."
+    question = f"Question: {' '.join(map(str, sequence))}"
     return question, correct_answer
 
 
