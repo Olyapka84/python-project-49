@@ -1,27 +1,16 @@
-from random import randint
-import prompt
-from brain_games.cli import welcome_user
-from brain_games.gcd import gcd
+from brain_games.random_for_games import randint_with_range
+from math import gcd
+from brain_games.rules import BRAIN_GCD_RULES
+from brain_games.game_engine import run_game
 
+
+def generate_round():
+    number1 = randint_with_range(0, 10)
+    number2 = randint_with_range(0, 10)
+    question = f"Question: {number1} {number2}"
+    correct_answer = gcd(number1, number2)
+    return question, str(correct_answer)
 
 def gcd_game():
-    name = welcome_user()
-    print("Find the greatest common divisor of given numbers.")
-    game_counter = 0
-    while game_counter < 3:
-        number1 = randint(0, 10)
-        number2 = randint(0, 10)
-        print(f"Question: {number1} {number2}")
-        answer = prompt.string('Your answer: ')
-        correct_answer = gcd(number1, number2)
-        if int(answer) == correct_answer:
-            print("Correct!")
-            game_counter += 1
-        else:
-            print(f"{answer} is wrong answer ;(. "
-                  f"Correct answer was {correct_answer}.\n"
-                  f"Let's try again, {name}!")
-            break
-
-    else:
-        print(f"Congratulations, {name}!")
+    rules = BRAIN_GCD_RULES
+    run_game(rules, generate_round)

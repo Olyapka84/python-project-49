@@ -1,32 +1,19 @@
-from random import randint, choice
-import prompt
-from brain_games.cli import welcome_user
+from brain_games.random_for_games import randint_with_range, choice
+from brain_games.rules import BRAIN_PROGRESSION_RULES, PROGRESSION_LENGTH
+from brain_games.game_engine import run_game
+
+
+def make_sequence():
+    start_sequence = randint_with_range(1, 100)
+    step_sequence = randint_with_range(1, 5)
+    hidden_num_index = randint_with_range(0, PROGRESSION_LENGTH - 1)
+    sequence = [start_sequence + i * step_sequence for i in range(PROGRESSION_LENGTH)]
+    correct_answer = str(sequence[hidden_num_index])
+    sequence[hidden_num_index] = ".."
+    question = f"Question: {' '.join(str(item) for item in sequence)}"
+    return question, correct_answer
 
 
 def progression_game():
-    name = welcome_user()
-    print("What number is missing in the progression?")
-    game_counter = 0
-    while game_counter < 3:
-        start_sequence = randint(1, 100)
-        step_sequence = randint(1, 5)
-        sequence = [start_sequence + i * step_sequence for i in range(10)]
-        hidden_number = choice(sequence)
-        hidden_number_index = sequence.index(hidden_number)
-        sequence[hidden_number_index] = ".."
-        print(f"Question: {' '.join(str(item) for item in sequence)}")
-        answer = prompt.string('Your answer: ')
-        correct_answer = hidden_number
-
-        if answer.isdigit() and int(answer) == correct_answer:
-            print("Correct!")
-            game_counter += 1
-
-        else:
-            print(
-                f"{answer} is wrong answer ;(. "
-                f"Correct answer was {correct_answer}.\n"
-                f"Let's try again, {name}!")
-            break
-    else:
-        print(f"Congratulations, {name}!")
+    rules = BRAIN_PROGRESSION_RULES
+    run_game(rules, make_sequence)

@@ -1,37 +1,27 @@
-from random import randint, choice
-import prompt
-from brain_games.cli import welcome_user
+from brain_games.random_for_games import randint_with_range, choose_operation
+from brain_games.rules import BRAIN_CALC_RULES
+from brain_games.game_engine import run_game
+
+
+def calculate(number1, operation, number2):
+    if operation == '+':
+        return number1 + number2
+    elif operation == '-':
+        return number1 - number2
+    elif operation == '*':
+        return number1 * number2
+
+
+
+def generate_round():
+    number1 = randint_with_range(0, 50)
+    number2 = randint_with_range(0, 50)
+    operation = choose_operation(['+', '-', '*'])
+    question = f"Question: {number1} {operation} {number2}"
+    correct_answer = calculate(number1, operation, number2)
+    return question, str(correct_answer)
 
 
 def calc_game():
-    name = welcome_user()
-    print("What is the result of the expression?")
-    game_counter = 0
-    while game_counter < 3:
-        number1 = randint(0, 50)
-        number2 = randint(0, 50)
-        operations = ['+', '-', '*']
-        operation = choice(operations)
-        print(f"Question: {number1} {operation} {number2}")
-        answer = prompt.string('Your answer: ')
-
-        if operation == '+':
-            correct_answer = number1 + number2
-        elif operation == '-':
-            correct_answer = number1 - number2
-        elif operation == '*':
-            correct_answer = number1 * number2
-
-        if int(answer) == correct_answer:
-            print("Correct!")
-            game_counter += 1
-
-        else:
-            print(
-                f"{answer} is wrong answer ;(. "
-                f"Correct answer was {correct_answer}.\n"
-                f"Let's try again, {name}!")
-            break
-
-    else:
-        print(f"Congratulations, {name}!")
+    rules = BRAIN_CALC_RULES
+    run_game(rules, generate_round)
