@@ -20,5 +20,4 @@ def generate_round():
 
 
 def prime_game():
-    rules = BRAIN_PRIME_RULES
-    run_game(rules, generate_round)
+    run_game(BRAIN_PRIME_RULES, generate_round)

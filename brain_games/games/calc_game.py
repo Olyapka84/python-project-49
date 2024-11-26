@@ -22,5 +22,4 @@ def generate_round():
 
 
 def calc_game():
-    rules = BRAIN_CALC_RULES
-    run_game(rules, generate_round)
+    run_game(BRAIN_CALC_RULES, generate_round)

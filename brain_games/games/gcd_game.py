@@ -13,5 +13,4 @@ def generate_round():
 
 
 def gcd_game():
-    rules = BRAIN_GCD_RULES
-    run_game(rules, generate_round)
+    run_game(BRAIN_GCD_RULES, generate_round)

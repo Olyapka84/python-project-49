@@ -18,5 +18,4 @@ def generate_round():
 
 
 def even_game():
-    rules = BRAIN_EVEN_RULES
-    run_game(rules, generate_round)
+    run_game(BRAIN_EVEN_RULES, generate_round)

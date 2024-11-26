@@ -15,5 +15,4 @@ def make_sequence():
 
 
 def progression_game():
-    rules = BRAIN_PROGRESSION_RULES
-    run_game(rules, make_sequence)
+    run_game(BRAIN_PROGRESSION_RULES, make_sequence)
