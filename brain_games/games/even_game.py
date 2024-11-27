@@ -4,10 +4,7 @@ from brain_games.game_engine import run_game
 
 
 def is_even(n):
-    if n % 2 == 0:
-        return True
-    else:
-        return False
+    return n % 2 == 0
 
 
 def generate_round():

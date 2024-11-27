@@ -5,8 +5,7 @@ from brain_games.game_engine import run_game
 
 
 def generate_round():
-    number1 = get_random_number(0, 10)
-    number2 = get_random_number(0, 10)
+    number1, number2 = get_random_number(0, 10), get_random_number(0, 10)
     question = f"{number1} {number2}"
     correct_answer = gcd(number1, number2)
     return question, str(correct_answer)
