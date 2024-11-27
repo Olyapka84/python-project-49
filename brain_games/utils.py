@@ -1,7 +1,7 @@
 from random import randint, choice
 
 
-def get_random_number(start, end):
+def get_random_number(start=1, end=99):
     return randint(start, end)
 
 
