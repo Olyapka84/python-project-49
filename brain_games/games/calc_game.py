@@ -16,7 +16,7 @@ def generate_round():
     number1 = get_random_number(0, 50)
     number2 = get_random_number(0, 50)
     operation = choose_operation(['+', '-', '*'])
-    question = f"Question: {number1} {operation} {number2}"
+    question = f"{number1} {operation} {number2}"
     correct_answer = calculate(number1, operation, number2)
     return question, str(correct_answer)
 

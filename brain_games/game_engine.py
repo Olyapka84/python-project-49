@@ -8,7 +8,7 @@ def run_game(rules, generate_round):
 
     for games in range(3):
         question, correct_answer = generate_round()
-        print(question)
+        print(f"Question: {question}")
 
         answer = prompt.string('Your answer: ')
         if answer == correct_answer:

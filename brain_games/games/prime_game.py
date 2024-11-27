@@ -14,7 +14,7 @@ def is_prime(n):
 
 def generate_round():
     number = get_random_number(1, 100)
-    question = f"Question: {number}"
+    question = f"{number}"
     correct_answer = "yes" if is_prime(number) else "no"
     return question, correct_answer
 

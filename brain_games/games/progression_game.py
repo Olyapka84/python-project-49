@@ -10,7 +10,7 @@ def make_sequence():
     sequence = [first_number + i * step for i in range(PROGRESSION_LENGTH)]
     correct_answer = str(sequence[missed_num_index])
     sequence[missed_num_index] = ".."
-    question = f"Question: {' '.join(map(str, sequence))}"
+    question = f"{' '.join(map(str, sequence))}"
     return question, correct_answer
 
 
