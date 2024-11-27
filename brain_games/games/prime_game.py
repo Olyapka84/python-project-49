@@ -1,5 +1,5 @@
 from brain_games.random_for_games import get_random_number
-from brain_games.rules import BRAIN_PRIME_RULES
+from brain_games.rules import BRAIN_PRIME_RULES, MIN_NUMBER, MAX_NUMBER_PRIME_PROGR
 from brain_games.game_engine import run_game
 
 
@@ -13,7 +13,7 @@ def is_prime(n):
 
 
 def generate_round():
-    number = get_random_number(1, 100)
+    number = get_random_number(MIN_NUMBER, MAX_NUMBER_PRIME_PROGR)
     question = f"{number}"
     correct_answer = "yes" if is_prime(number) else "no"
     return question, correct_answer

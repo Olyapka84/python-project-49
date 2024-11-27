@@ -1,24 +1,24 @@
 from brain_games.random_for_games import get_random_number, choose_operation
-from brain_games.rules import BRAIN_CALC_RULES
+from brain_games.rules import BRAIN_CALC_RULES, OPERATIONS, MIN_NUMBER, MAX_NUMBER_CALC
 from brain_games.game_engine import run_game
 
 
 def calculate(number1, operation, number2):
-    if operation == '+':
-        return number1 + number2
-    elif operation == '-':
-        return number1 - number2
-    elif operation == '*':
-        return number1 * number2
+    operations = {
+        '+': number1 + number2,
+        '-': number1 - number2,
+        '*': number1 * number2
+    }
+    return operations[operation]
 
 
 def generate_round():
-    number1 = get_random_number(0, 50)
-    number2 = get_random_number(0, 50)
-    operation = choose_operation(['+', '-', '*'])
+    number1, number2 = (get_random_number(MIN_NUMBER, MAX_NUMBER_CALC),
+                        get_random_number(MIN_NUMBER, MAX_NUMBER_CALC))
+    operation = choose_operation(OPERATIONS)
     question = f"{number1} {operation} {number2}"
-    correct_answer = calculate(number1, operation, number2)
-    return question, str(correct_answer)
+    correct_answer = str(calculate(number1, operation, number2))
+    return question, correct_answer
 
 
 def calc_game():
