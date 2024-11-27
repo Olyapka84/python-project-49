@@ -1,6 +1,6 @@
-from brain_games.random_for_games import get_random_number
-from brain_games.rules import (BRAIN_PROGRESSION_RULES, PROGRESSION_LENGTH,
-                               MIN_NUMBER, MAX_STEP_PROGRESSION, MAX_NUMBER_PRIME_PROGR)
+from brain_games.utils import get_random_number
+from brain_games.consts import (BRAIN_PROGRESSION_RULES, PROGRESSION_LENGTH,
+                                MIN_NUMBER, MAX_STEP_PROGRESSION, MAX_NUMBER_PRIME_PROGR)
 from brain_games.game_engine import run_game
 
 

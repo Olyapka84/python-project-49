@@ -1,6 +1,6 @@
-from brain_games.random_for_games import get_random_number
+from brain_games.utils import get_random_number
 from math import gcd
-from brain_games.rules import BRAIN_GCD_RULES, MIN_NUMBER, MAX_NUMBER_GCD
+from brain_games.consts import BRAIN_GCD_RULES, MIN_NUMBER, MAX_NUMBER_GCD
 from brain_games.game_engine import run_game
 
 
