@@ -1,6 +1,6 @@
-from brain_games.utils import get_random_number
 from brain_games.consts import BRAIN_PROGRESSION_RULES, PROGRESSION_LENGTH
 from brain_games.game_engine import run_game
+from brain_games.utils import get_random_number
 
 
 def make_sequence():

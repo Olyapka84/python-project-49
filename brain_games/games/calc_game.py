@@ -1,6 +1,6 @@
-from brain_games.utils import get_random_number, choose_operation
 from brain_games.consts import BRAIN_CALC_RULES, OPERATIONS
 from brain_games.game_engine import run_game
+from brain_games.utils import choose_operation, get_random_number
 
 
 def calculate(number1, operation, number2):

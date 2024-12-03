@@ -1,6 +1,6 @@
-from brain_games.utils import get_random_number
 from brain_games.consts import BRAIN_EVEN_RULES
 from brain_games.game_engine import run_game
+from brain_games.utils import get_random_number
 
 
 def is_even(n):

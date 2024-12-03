@@ -1,7 +1,8 @@
-from brain_games.utils import get_random_number
 from math import gcd
+
 from brain_games.consts import BRAIN_GCD_RULES
 from brain_games.game_engine import run_game
+from brain_games.utils import get_random_number
 
 
 def generate_round():
